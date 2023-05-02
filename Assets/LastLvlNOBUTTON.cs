@@ -9,6 +9,7 @@ public class LastLvlNOBUTTON : MonoBehaviour
     public GameObject player;
     public GameObject hintObject;
     public KeyCode keyToPress;
+    public Transform target;
 
     private GameObject[] objectsWithTag4;
     private GameObject[] objectsWithTag6;
@@ -52,7 +53,6 @@ public class LastLvlNOBUTTON : MonoBehaviour
                 obj.SetActive(false);
             }
             questionCanvas.SetActive(false);
-
             afterCanvas.SetActive(true);
         }
     }

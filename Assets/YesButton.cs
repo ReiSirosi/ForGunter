@@ -10,6 +10,7 @@ public class YesButton : MonoBehaviour
     public GameObject nextLvl;
     public GameObject hintObject;
     public KeyCode keyToPress;
+    public Transform target;
 
     private bool inTrigger;
 
@@ -37,6 +38,7 @@ public class YesButton : MonoBehaviour
         {
             player.transform.position = nextLvl.transform.position;
             questionCanvas.SetActive(false);
+            player.transform.LookAt(target);
         }
     }
 }

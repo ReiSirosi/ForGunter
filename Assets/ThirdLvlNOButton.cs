@@ -8,6 +8,7 @@ public class ThirdLvlNOButton : MonoBehaviour
     public GameObject player;
     public GameObject hintObject;
     public KeyCode keyToPress;
+    public Transform target;
 
     private GameObject[] objectsWithTag3;
     private bool inTrigger;
@@ -44,7 +45,6 @@ public class ThirdLvlNOButton : MonoBehaviour
             {
                 obj.SetActive(false);
             }
-
             questionCanvas.SetActive(false);
         }
     }

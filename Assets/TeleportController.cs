@@ -7,6 +7,7 @@ public class TeleportController : MonoBehaviour
 {
     [SerializeField] private GameObject questionCanvas;
     [SerializeField] private GameObject placeToTP;
+    public Transform target;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -17,6 +18,7 @@ public class TeleportController : MonoBehaviour
             playerRb.velocity = Vector3.zero; // установить скорость игрока равной нулю
             playerRb.angularVelocity = Vector3.zero;
             questionCanvas.SetActive(true);
+            playerRb.transform.LookAt(target);
         }
     }
 }

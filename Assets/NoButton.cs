@@ -9,7 +9,7 @@ public class NoButton : MonoBehaviour
     public GameObject goToFirstLvl;
     public GameObject hintObject;
     public KeyCode keyToPress;
-
+    public Transform target;
     private bool inTrigger;
 
     private void OnTriggerEnter(Collider other)
@@ -36,6 +36,7 @@ public class NoButton : MonoBehaviour
         {
             player.transform.position = goToFirstLvl.transform.position;
             questionCanvas.SetActive(false);
+            player.transform.LookAt(target);
         }
     }
 }

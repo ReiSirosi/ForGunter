@@ -2,20 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FifthLvlNOBUTTON : MonoBehaviour
+public class FouthLvlNOBUTTON : MonoBehaviour
 {
     [SerializeField] private GameObject questionCanvas;
     public GameObject player;
     public GameObject hintObject;
     public KeyCode keyToPress;
+    public Transform target;
+    public Rigidbody rb;
 
-    private GameObject[] objectsWithTag5;
+    private GameObject[] objectsWithTag4;
     private bool inTrigger;
 
 
     void Start()
     {
-        objectsWithTag5 = GameObject.FindGameObjectsWithTag("5"); // получить все объекты с тэгом "5"
+        rb = GetComponent<Rigidbody>();
+        objectsWithTag4 = GameObject.FindGameObjectsWithTag("4"); // получить все объекты с тэгом "4"
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,11 +43,11 @@ public class FifthLvlNOBUTTON : MonoBehaviour
     {
         if (inTrigger && Input.GetKeyDown(keyToPress))
         {
-            foreach (GameObject obj in objectsWithTag5)
+            foreach (GameObject obj in objectsWithTag4)
             {
                 obj.SetActive(false);
             }
-
+            player.transform.LookAt(target);
             questionCanvas.SetActive(false);
         }
     }
