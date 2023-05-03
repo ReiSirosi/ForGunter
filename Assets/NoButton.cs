@@ -39,4 +39,5 @@ public class NoButton : MonoBehaviour
             player.transform.LookAt(target);
         }
     }
+
 }

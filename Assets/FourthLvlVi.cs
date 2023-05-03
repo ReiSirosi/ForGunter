@@ -7,6 +7,7 @@ public class FourthLvlVi : MonoBehaviour
     private GameObject[] objectsWithTag5; // массив объектов с тэгом "5"
     private GameObject[] objectsWithTag6; // массив объектов с тэгом "6"
     private Vector3 playerPositionOnEnter;
+    [SerializeField] private GameObject fourthCanvas;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -26,6 +27,7 @@ public class FourthLvlVi : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+
         if (other.CompareTag("Player"))
         {
             Vector3 playerPositionOnExit = other.transform.position;

@@ -8,7 +8,7 @@ public class ThirdLvlVi : MonoBehaviour
     private GameObject[] objectsWithTag5; // массив объектов с тэгом "5"
     private GameObject[] objectsWithTag6; // массив объектов с тэгом "6"
     private Vector3 playerPositionOnEnter;
-
+    [SerializeField] private GameObject thirdCanvas;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -31,6 +31,7 @@ public class ThirdLvlVi : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        thirdCanvas.SetActive(false);
         if (other.CompareTag("Player"))
         {
             Vector3 playerPositionOnExit = other.transform.position;

@@ -12,6 +12,7 @@ TagManager:
   - 5
   - 6
   - TriggerLvl
+  - Canvas
   layers:
   - Default
   - TransparentFX

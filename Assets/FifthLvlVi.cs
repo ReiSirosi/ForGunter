@@ -6,7 +6,8 @@ public class FifthLvlVi : MonoBehaviour
 {
     private GameObject[] objectsWithTag6; // массив объектов с тэгом "6"
     private Vector3 playerPositionOnEnter; // позиция игрока при входе в триггер
-
+    [SerializeField] private GameObject fifthCanvas;
+    [SerializeField] private GameObject sixthCanvas;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -21,6 +22,8 @@ public class FifthLvlVi : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        fifthCanvas.SetActive(false);
+        sixthCanvas.SetActive(false);
         if (other.CompareTag("Player"))
         {
             Vector3 playerPositionOnExit = other.transform.position;

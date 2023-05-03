@@ -15,7 +15,6 @@ public class LastLvlNOBUTTON : MonoBehaviour
     private GameObject[] objectsWithTag6;
     private bool inTrigger;
 
-
     void Start()
     {
         objectsWithTag4 = GameObject.FindGameObjectsWithTag("4"); // получить все объекты с тэгом "4"

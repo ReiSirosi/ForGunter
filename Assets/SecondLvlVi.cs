@@ -10,6 +10,7 @@ public class SecondLvlVi : MonoBehaviour
     private GameObject[] objectsWithTag6; // массив объектов с тэгом "6"
     private Vector3 playerPositionOnEnter;
     [SerializeField] private GameObject afterCanvas;
+    public GameObject secondCanvas;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -41,6 +42,7 @@ public class SecondLvlVi : MonoBehaviour
         afterCanvas.SetActive(false);
         if (other.CompareTag("Player"))
         {
+            secondCanvas.SetActive(false);
             Vector3 playerPositionOnExit = other.transform.position;
             if (playerPositionOnExit.y > playerPositionOnEnter.y)
             {
