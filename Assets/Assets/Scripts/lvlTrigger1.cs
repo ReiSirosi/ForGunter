@@ -2,18 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lvlTrigger1: MonoBehaviour
+public class  LvlTrigger1: MonoBehaviour
 {
-
+    [SerializeField] private GameObject one;
     public GameObject remove;
+    [SerializeField] private Canvas firstCanvas;
 
-
-    void Start()
-    {
-        //Ball = GameObject.Find("Ball");
-    }
     void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Player"))
+        {
         var _myscript1 = remove.GetComponent<RotateMovement1>();
         _myscript1.enabled = true;
 
@@ -31,10 +29,15 @@ public class lvlTrigger1: MonoBehaviour
 
         var _myscript6 = remove.GetComponent<RotateMovement6>();
         _myscript6.enabled = false;
-    }
-    // Update is called once per frame
-    void Update()
-    {
+        }
+}
 
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            one.transform.Rotate(0f, 180f, 0);
+            firstCanvas.gameObject.SetActive(false);
+        }
     }
 }

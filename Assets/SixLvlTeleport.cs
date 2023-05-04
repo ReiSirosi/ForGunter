@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class TeleportController : MonoBehaviour
+public class SixLvlTeleport : MonoBehaviour
 {
     [SerializeField] private GameObject questionCanvas;
     [SerializeField] private GameObject placeToTP;
@@ -20,8 +20,14 @@ public class TeleportController : MonoBehaviour
             playerRb.MovePosition(placeToTP.transform.position);
             playerRb.velocity = Vector3.zero; // установить скорость игрока равной нулю
             playerRb.angularVelocity = Vector3.zero;
-            questionCanvas.SetActive(true);
             playerRb.transform.LookAt(target);
+
+            if (GameManager.count == false)
+            {
+                questionCanvas.SetActive(false);
+            }
+            else
+                questionCanvas.SetActive(true);
         }
     }
 }
