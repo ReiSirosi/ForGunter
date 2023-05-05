@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BalltoBox : MonoBehaviour
+public class BoxToBall : MonoBehaviour
 {
 
     private GameObject remove;

@@ -2195,7 +2195,7 @@ SphereCollider:
   m_GameObject: {fileID: 283548252}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -2365,7 +2365,7 @@ BoxCollider:
   m_GameObject: {fileID: 283548252}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -2376,7 +2376,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283548252}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f8cb806a8ecdb445ada6415fa015817, type: 3}
   m_Name: 
@@ -2401,12 +2401,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283548252}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b925ee05ca3017a4fbd9f511b7d4dde9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 10
 --- !u!1001 &290082580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3865,6 +3865,7 @@ GameObject:
   - component: {fileID: 403433894}
   - component: {fileID: 403433893}
   - component: {fileID: 403433897}
+  - component: {fileID: 403433898}
   m_Layer: 0
   m_Name: TPlol
   m_TagString: Untagged
@@ -3968,6 +3969,18 @@ MonoBehaviour:
   placeToTP: {fileID: 1353427351}
   rotateCifra: {fileID: 682833244}
   target: {fileID: 1241127239}
+--- !u!114 &403433898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 403433892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ee1e7257415c1f4591b10731b06db7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &419721402
 GameObject:
   m_ObjectHideFlags: 0
@@ -6306,6 +6319,7 @@ GameObject:
   - component: {fileID: 768409377}
   - component: {fileID: 768409379}
   - component: {fileID: 768409380}
+  - component: {fileID: 768409381}
   m_Layer: 0
   m_Name: FifthLevelTrigger
   m_TagString: TriggerLvl
@@ -6369,6 +6383,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   five: {fileID: 0}
   fiveCanvas: {fileID: 0}
+--- !u!114 &768409381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768409375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd13d84ecffb2a846b5bab713fcebb58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &789752583
 GameObject:
   m_ObjectHideFlags: 0

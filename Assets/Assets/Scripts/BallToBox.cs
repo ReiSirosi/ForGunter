@@ -5,7 +5,7 @@ using UnityEngine;
 public class BallToBox : MonoBehaviour
 {
 
-    public GameObject remove;
+    private GameObject remove;
  
 
     void Start()
