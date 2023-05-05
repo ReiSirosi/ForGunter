@@ -5,8 +5,13 @@ using UnityEngine;
 public class  LvlTrigger1: MonoBehaviour
 {
     [SerializeField] private GameObject one;
-    public GameObject remove;
+    private GameObject remove;
     [SerializeField] private Canvas firstCanvas;
+
+    void Start()
+    {
+        remove = GameObject.Find("PLAYER");
+    }
 
     void OnTriggerEnter(Collider other)
     {
