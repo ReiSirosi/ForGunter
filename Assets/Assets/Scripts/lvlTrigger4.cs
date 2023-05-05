@@ -2,11 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LvlTrigger4: MonoBehaviour
+public class lvlTrigger4: MonoBehaviour
 {
     [SerializeField] private GameObject four;
-    public GameObject remove;
+    private GameObject remove;
     [SerializeField] private Canvas fourCanvas;
+
+    void Start()
+    {
+        remove = GameObject.Find("PLAYER");
+    }
 
     void OnTriggerEnter(Collider other)
     {

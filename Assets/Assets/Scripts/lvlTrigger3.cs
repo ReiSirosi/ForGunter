@@ -2,11 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LvlTrigger3: MonoBehaviour
+public class lvlTrigger3: MonoBehaviour
 {
     [SerializeField] private GameObject three;
-    public GameObject remove;
+    private GameObject remove;
     [SerializeField] private Canvas thirdCanvas;
+
+    void Start()
+    {
+        remove = GameObject.Find("PLAYER");
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))

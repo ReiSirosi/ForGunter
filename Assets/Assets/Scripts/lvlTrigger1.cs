@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class  LvlTrigger1: MonoBehaviour
+public class lvlTrigger1 : MonoBehaviour
 {
     [SerializeField] private GameObject one;
     private GameObject remove;

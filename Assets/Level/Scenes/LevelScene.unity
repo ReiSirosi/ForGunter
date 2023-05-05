@@ -880,6 +880,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe3c52df4cf002c44815a8de55c3f913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  six: {fileID: 0}
+  one: {fileID: 0}
+  two: {fileID: 0}
+  tryMore: {fileID: 0}
+  nice: {fileID: 0}
+  sixCanvas: {fileID: 0}
 --- !u!1 &147139003
 GameObject:
   m_ObjectHideFlags: 0
@@ -5508,6 +5514,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a9338c8adb9c549b78bb4b5cc76b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  three: {fileID: 0}
+  thirdCanvas: {fileID: 0}
 --- !u!1 &682833244
 GameObject:
   m_ObjectHideFlags: 0
@@ -6000,6 +6008,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 427e2f4d24ec0e84296a3abd7ce924b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  two: {fileID: 0}
+  secondCanvas: {fileID: 0}
 --- !u!1 &739486093
 GameObject:
   m_ObjectHideFlags: 0
@@ -6357,6 +6367,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99e6200feb060fe41a08d762350a8af7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  five: {fileID: 0}
+  fiveCanvas: {fileID: 0}
 --- !u!1 &789752583
 GameObject:
   m_ObjectHideFlags: 0
@@ -7712,6 +7724,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8541e40578a18694cbc4f5ec9a59af65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  one: {fileID: 0}
+  firstCanvas: {fileID: 0}
 --- !u!1 &1039065651
 GameObject:
   m_ObjectHideFlags: 0
@@ -9325,6 +9339,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ded96e3f0fe01249a256dda233339e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  four: {fileID: 0}
+  fourCanvas: {fileID: 0}
 --- !u!1 &1287832656
 GameObject:
   m_ObjectHideFlags: 0
@@ -9634,7 +9650,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329595238}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -11647,7 +11663,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558138473}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -13908,7 +13924,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925118920}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -15215,7 +15231,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067638826}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}

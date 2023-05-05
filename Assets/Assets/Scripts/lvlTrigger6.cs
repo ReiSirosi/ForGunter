@@ -2,17 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LvlTrigger6: MonoBehaviour
+public class lvlTrigger6: MonoBehaviour
 {
     [SerializeField] private GameObject six;
     [SerializeField] private GameObject one;
     [SerializeField] private GameObject two;
     [SerializeField] private Canvas tryMore;
     [SerializeField] private Canvas nice;
-    public GameObject remove;
+    private GameObject remove;
     [SerializeField] private Canvas sixCanvas;
     private bool countYes = true;
     private bool countNo = false;
+
+    void Start()
+    {
+        remove = GameObject.Find("PLAYER");
+    }
+
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
